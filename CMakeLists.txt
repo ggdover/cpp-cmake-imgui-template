@@ -19,6 +19,9 @@ find_package(SDL2 REQUIRED)
 #       ../include
 #)
 
+# Generates debug symbols for when we debug with gdb
+set(CMAKE_BUILD_TYPE Debug)
+
 add_subdirectory(thirdparty_src/glad)
 add_subdirectory(thirdparty_src/imgui)
 add_subdirectory(src)

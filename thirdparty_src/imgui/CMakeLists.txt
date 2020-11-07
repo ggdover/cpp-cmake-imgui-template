@@ -36,3 +36,8 @@ target_sources(myimgui
 target_link_libraries(myimgui
     glad
 )
+
+target_include_directories(myimgui
+    PUBLIC
+        imgui
+)

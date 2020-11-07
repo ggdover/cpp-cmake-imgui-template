@@ -7,6 +7,8 @@ add_executable(mytarget)
 target_sources(mytarget
 	PRIVATE
 		mytarget.cpp
+		gui/gui.h
+		gui/gui.cpp
 )
 
 # Incase there are any shared or static libraries that we are linking to

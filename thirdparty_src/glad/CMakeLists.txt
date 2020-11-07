@@ -10,3 +10,8 @@ target_include_directories(glad
     PUBLIC
         include
 )
+
+target_link_libraries(glad
+    PUBLIC
+        ${CMAKE_DL_LIBS} # Adds functions 'dlopen' and 'dlclose' needed by glad
+)
